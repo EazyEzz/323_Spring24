@@ -1,0 +1,134 @@
+In main(), after opening all files
+
+Entering buildStack()
+In buildStack(): op = +, data = 32
+In buildStack(): op = +, data = 52
+In buildStack(): op = +, data = 18
+In buildStack(): op = -, data = 52
+In buildStack(), top node deleted
+In buildStack(): op = -, data = 18
+In buildStack(), top node deleted
+In buildStack(): op = -, data = 32
+In buildStack(), top node deleted
+In buildStack(): op = -, data = 10
+In buildStack(), stack is empty
+In buildStack(): op = %, data = 4
+In buildStack(), op = % is illegal
+In buildStack(): op = +, data = 12
+In buildStack(): op = +, data = 15
+In buildStack(): op = -, data = 32
+In buildStack(), top node deleted
+In buildStack(): op = +, data = 9
+In buildStack(): op = +, data = 19
+In buildStack(): op = +, data = 26
+In buildStack(): op = *, data = 44
+In buildStack(), op = * is illegal
+In buildStack(): op = +, data = 38
+In buildStack(): op = +, data = 43
+In buildStack(): op = +, data = 21
+In buildStack(): op = +, data = 99
+In buildStack(): op = +, data = 88
+In buildStack(): op = #, data = 33
+In buildStack(), op = # is illegal
+In buildStack(): op = -, data = 26
+In buildStack(), top node deleted
+In buildStack(): op = -, data = 26
+In buildStack(), top node deleted
+In buildStack(): op = -, data = 88
+In buildStack(), top node deleted
+In buildStack(): op = +, data = 11
+In buildStack(): op = +, data = 33
+In buildStack(): op = ?, data = 13
+In buildStack(), op = ? is illegal
+In buildStack(), printing Stack
+Top -> (-9999,33) -> (33,11) -> (11,43) -> (43,38) -> (38,26) -> (26,19) -> (19,9) -> (9,12) -> (12, null) -> NULL
+Leaving buildStack()
+
+Entering buildQueue()
+In buildQueue(): op = +, data = 32
+In buildQueue(): op = +, data = 52
+In buildQueue(): op = +, data = 18
+In buildQueue(): op = -, data = 52
+In buildQueue(), tailNode's data is32
+In buildQueue(): op = -, data = 18
+In buildQueue(), tailNode's data is52
+In buildQueue(): op = -, data = 32
+In buildQueue(), tailNode's data is18
+In buildQueue(): op = -, data = 10
+In buildQueue(), the Queue is empty
+In buildQueue(): op = %, data = 4
+In buildQueue(), op = % is illegal
+In buildQueue(): op = +, data = 12
+In buildQueue(): op = +, data = 15
+In buildQueue(): op = -, data = 32
+In buildQueue(), tailNode's data is12
+In buildQueue(): op = +, data = 9
+In buildQueue(): op = +, data = 19
+In buildQueue(): op = +, data = 26
+In buildQueue(): op = *, data = 44
+In buildQueue(), op = * is illegal
+In buildQueue(): op = +, data = 38
+In buildQueue(): op = +, data = 43
+In buildQueue(): op = +, data = 21
+In buildQueue(): op = +, data = 99
+In buildQueue(): op = +, data = 88
+In buildQueue(): op = #, data = 33
+In buildQueue(), op = # is illegal
+In buildQueue(): op = -, data = 26
+In buildQueue(), tailNode's data is15
+In buildQueue(): op = -, data = 26
+In buildQueue(), tailNode's data is9
+In buildQueue(): op = -, data = 88
+In buildQueue(), tailNode's data is19
+In buildQueue(): op = +, data = 11
+In buildQueue(): op = +, data = 33
+In buildQueue(): op = ?, data = 13
+In buildQueue(), op = ? is illegal
+In buildQueue(), printing Queue
+Head -> (-9999,26) -> (26,38) -> (38,43) -> (43,21) -> (21,99) -> (99,88) -> (88,11) -> (11,33) -> (33, null) -> NULL
+Leaving buildQueue()
+
+Entering buildList()
+In buildList(): op = +, data = 32
+In buildList(): op = +, data = 52
+In buildList(): op = +, data = 18
+In buildList(): op = -, data = 52
+In buildList(), data found and node deleted
+In buildList(): op = -, data = 18
+In buildList(), data found and node deleted
+In buildList(): op = -, data = 32
+In buildList(), data found and node deleted
+In buildList(): op = -, data = 10
+In buildList(), data is not in the list
+In buildList(): op = %, data = 4
+In buildList(), op = % is illegal
+In buildList(): op = +, data = 12
+In buildList(): op = +, data = 15
+In buildList(): op = -, data = 32
+In buildList(), data is not in the list
+In buildList(): op = +, data = 9
+In buildList(): op = +, data = 19
+In buildList(): op = +, data = 26
+In buildList(): op = *, data = 44
+In buildList(), op = * is illegal
+In buildList(): op = +, data = 38
+In buildList(): op = +, data = 43
+In buildList(): op = +, data = 21
+In buildList(): op = +, data = 99
+In buildList(): op = +, data = 88
+In buildList(): op = #, data = 33
+In buildList(), op = # is illegal
+In buildList(): op = -, data = 26
+In buildList(), data is not in the list
+In buildList(): op = -, data = 26
+In buildList(), data is not in the list
+In buildList(): op = -, data = 88
+In buildList(), data found and node deleted
+In buildList(): op = +, data = 11
+In buildList(): op = +, data = 33
+In buildList(): op = ?, data = 13
+In buildList(), op = ? is illegal
+In buildList(), printing List
+listHead -> (-9999,9) -> (9,33) -> (33,11) -> (11,99) -> (99,21) -> (21,43) -> (43,38) -> (38,26) -> (26,19) -> (19,12) -> (12,15) -> (15, null) -> NULL
+Leaving buildList()
+
