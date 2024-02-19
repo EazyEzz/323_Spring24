@@ -49,11 +49,11 @@ In buildQueue(): op = +, data = 32
 In buildQueue(): op = +, data = 52
 In buildQueue(): op = +, data = 18
 In buildQueue(): op = -, data = 52
-In buildQueue(), tailNode's data is32
+In buildQueue(), tailNode's data is 32
 In buildQueue(): op = -, data = 18
-In buildQueue(), tailNode's data is52
+In buildQueue(), tailNode's data is 52
 In buildQueue(): op = -, data = 32
-In buildQueue(), tailNode's data is18
+In buildQueue(), tailNode's data is 18
 In buildQueue(): op = -, data = 10
 In buildQueue(), the Queue is empty
 In buildQueue(): op = %, data = 4
@@ -61,7 +61,7 @@ In buildQueue(), op = % is illegal
 In buildQueue(): op = +, data = 12
 In buildQueue(): op = +, data = 15
 In buildQueue(): op = -, data = 32
-In buildQueue(), tailNode's data is12
+In buildQueue(), tailNode's data is 12
 In buildQueue(): op = +, data = 9
 In buildQueue(): op = +, data = 19
 In buildQueue(): op = +, data = 26
@@ -75,11 +75,11 @@ In buildQueue(): op = +, data = 88
 In buildQueue(): op = #, data = 33
 In buildQueue(), op = # is illegal
 In buildQueue(): op = -, data = 26
-In buildQueue(), tailNode's data is15
+In buildQueue(), tailNode's data is 15
 In buildQueue(): op = -, data = 26
-In buildQueue(), tailNode's data is9
+In buildQueue(), tailNode's data is 9
 In buildQueue(): op = -, data = 88
-In buildQueue(), tailNode's data is19
+In buildQueue(), tailNode's data is 19
 In buildQueue(): op = +, data = 11
 In buildQueue(): op = +, data = 33
 In buildQueue(): op = ?, data = 13
@@ -119,7 +119,7 @@ In buildList(): op = +, data = 88
 In buildList(): op = #, data = 33
 In buildList(), op = # is illegal
 In buildList(): op = -, data = 26
-In buildList(), data is not in the list
+In buildList(), data found and node deleted
 In buildList(): op = -, data = 26
 In buildList(), data is not in the list
 In buildList(): op = -, data = 88
@@ -129,6 +129,6 @@ In buildList(): op = +, data = 33
 In buildList(): op = ?, data = 13
 In buildList(), op = ? is illegal
 In buildList(), printing List
-listHead -> (-9999,9) -> (9,33) -> (33,11) -> (11,99) -> (99,21) -> (21,43) -> (43,38) -> (38,26) -> (26,19) -> (19,12) -> (12,15) -> (15, null) -> NULL
+listHead -> (-9999,9) -> (9,11) -> (11,12) -> (12,15) -> (15,19) -> (19,21) -> (21,33) -> (33,38) -> (38,43) -> (43,99) -> (99, null) -> NULL
 Leaving buildList()
 

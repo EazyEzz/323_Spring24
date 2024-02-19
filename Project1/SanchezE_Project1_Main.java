@@ -249,7 +249,7 @@ class LLlist{
 
     listNode findSpot(listNode newNode){
         listNode spot = listHead;
-        if(listHead.next != null && newNode.data > spot.next.data){
+        while(spot.next != null && newNode.data > spot.next.data){
             spot = spot.next;
         }
         return spot;
@@ -303,16 +303,20 @@ class LLlist{
                             listNode newNode = new listNode(data);
                             listNode spot = findSpot(newNode);
                             insertOneNode(spot, newNode);
+                            //debugWriter.write(printList() + "\n");
                         } else if (op == '-') {
                             listNode junk = deleteOneNode(data);
                             if (junk != null) {
                                 debugWriter.write("In buildList(), data found and node deleted\n");
+                                //debugWriter.write(printList() + "\n");
                                 junk = null;
                             } else {
                                 debugWriter.write("In buildList(), data is not in the list\n");
+                                //debugWriter.write(printList() + "\n");
                             }
                         } else {
                             debugWriter.write("In buildList(), op = " + op + " is illegal\n");
+                            //debugWriter.write(printList() + "\n");
                         }
     
                     }
