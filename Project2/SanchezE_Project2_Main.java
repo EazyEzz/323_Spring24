@@ -3,7 +3,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.IOException;
 
 public class SanchezE_Project2_Main {
     public static void main(String[] args) throws IOException{
@@ -19,10 +18,8 @@ public class SanchezE_Project2_Main {
         try(FileWriter debugWriter = new FileWriter(debugFile, true);
             FileWriter outWriter = new FileWriter(outFile1, true);){
             RadixSort radixSort = new RadixSort(inFile, debugWriter);
-
+            radixSort.RSort(inFile, outWriter, debugWriter);
         }
-
-
     }    
 }
 class listNode{
@@ -33,11 +30,25 @@ class listNode{
         this.data = data;
         this.next = null;
     }
+
+    static String printNode(listNode node){
+        String s = "";
+        if (node!= null){
+            if (node.next != null){
+                s = "(" + node.data + "," + node.next.data  + ")";
+            } else{
+                s = "(" + node.data + ", null)";
+            }
+        } else{
+            s = "(null, null)";
+        }
+        return s;
+    }
 }
 
 class LLQueue{
-    listNode head;
-    listNode tail;
+    static listNode head;
+    static listNode tail;
 
     LLQueue(){
         this.head = new listNode(-9999);
@@ -50,10 +61,10 @@ class LLQueue{
 
     }
 
-    listNode deleteQ(){
+    static listNode deleteQ(){
         listNode t = head;
         if (t.next != null) {
-            if (tail == t.next) {
+            if (tail == t.next){
                 tail = head;
             }
             listNode tmp = t.next;
@@ -64,12 +75,24 @@ class LLQueue{
         return null;
     }
 
-    Boolean isEmpty(){
+    static Boolean isEmpty(){
         return tail == head;
     }
 
-    void printQueue(){
-
+    static String printQueue(LLQueue[][] hashTable, int currentTable, int index){
+        StringBuilder sb;
+        if (!(hashTable[currentTable][index].isEmpty())){
+            sb = new StringBuilder("Table[" + currentTable + "][" + index + "]: ");
+            listNode currNode = hashTable[currentTable][index].head;
+            while (currNode != null){
+                sb.append(listNode.printNode(currNode)).append(" -> ");
+                currNode = currNode.next;
+            }
+            sb.append(" -> NULL");
+            return sb.toString();
+        }
+        sb = new StringBuilder("");
+        return sb.toString();
     }
 }
 
@@ -101,25 +124,25 @@ class RadixSort{
         
         try (Scanner scanner = new Scanner(new FileReader(inFile))){
             debugWriter.write("** Entering preProcessing()\n");
-            while (scanner.hasNextLine()) { //file contains another line?
+            while (scanner.hasNextLine()){ //file contains another line?
                 //initially read entire line
                 String line = scanner.nextLine();
 
                 //new scanner to scan the entire String line
-                try (Scanner lineScanner = new Scanner(line)) {
+                try (Scanner lineScanner = new Scanner(line)){
                     //read each number in the line
                     while (lineScanner.hasNextInt()) {
                         int data = lineScanner.nextInt(); 
 
                         if (data < negativeNum){
                             negativeNum = data;
-                        } else if (data > positiveNum) {
+                        } else if (data > positiveNum){
                             positiveNum = data;
                         }
                     }
                 } //inner lineScanner close automatically, IOException not required for scanner String
             }
-            if (negativeNum < 0) {
+            if (negativeNum < 0){
                 offSet = Math.abs(negativeNum);
             } else {
                 offSet = 0;
@@ -137,6 +160,7 @@ class RadixSort{
     void RSort(File inFile, FileWriter outWriter, FileWriter debugWriter){
         digitPosition = 0;
         currentTable = 0;
+        int hashIndex;
 
         try (Scanner scanner = new Scanner(new FileReader(inFile))) {
             debugWriter.write("*** Entering RSort()\n");
@@ -149,14 +173,61 @@ class RadixSort{
                         data += offSet; //add negative number if it exists
                         
                         listNode newNode = new listNode(data);
-                        int hashIndex = getIndex(data,digitPosition);
+                        hashIndex = getIndex(data,digitPosition); //hash function
 
                         LLQueue.insertQ(hashTable, currentTable, hashIndex, newNode);
                     }
-                    debugWriter.write("In RSort: After inserting all data from inFile into hashTable[0]\n");
+                    debugWriter.write("In RSort: After inserting all data from inFile into hashTable[" + currentTable + "]\n");
+                    printTable(hashTable, currentTable, debugWriter);
+                    
                 } //close inner lineScanner
             }
         } catch (IOException e){ //close outter scanner
+            e.printStackTrace();
+        }
+        //step 4-11 loop until digitPosition < maxLength
+        //starting currentTable = 0
+        //maxLength = 3
+        digitPosition++;
+        //starting digitPosition = 1
+        while (digitPosition < maxLength){
+            previousTable = currentDigit;
+            currentTable = (currentTable +1) % 2;
+            
+            try {
+                outWriter.write("\nIn RSort(), digitPosition = " + digitPosition + 
+                                ", currentTable = " + currentTable +
+                                ", previousTable = " + previousTable + "\n");
+                outWriter.write("In RSort(), printing previous hashTable\n");
+                printTable(hashTable, previousTable, outWriter);
+    
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            //tableIndex = 0
+            for (int tableIndex = 0; tableIndex < 10; tableIndex++) {
+            // move nodes from hashTable[previousTable][tableIndex] queue to current table
+                while (!(hashTable[previousTable][tableIndex].isEmpty()) && tableIndex < 10) {
+                    listNode newNode = hashTable[previousTable][tableIndex].deleteQ();
+                    hashIndex = getIndex(newNode.data, digitPosition);
+                    LLQueue.insertQ(hashTable, currentTable, hashIndex, newNode);
+
+                    try {
+                        debugWriter.write(
+                                "In RSort(), finished moving one queue from previousTable to currentTable; tableIndex = "
+                                + tableIndex + "\n");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            digitPosition++;
+        }
+        
+        try {
+            outWriter.write("\nPrinting the sorted data\n");
+            printSortedData(hashTable, currentTable, outWriter, offSet);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -170,5 +241,43 @@ class RadixSort{
         return (data / (int)Math.pow(10, position)) % 10;
     }
 
+    void printTable(LLQueue[][] hashTable, int currentTable, FileWriter outfileType){
+        //call printQueue()
+        try {
+            String printQ = "";
+            for (int i = 0; i < 10; i++){
+                printQ = LLQueue.printQueue(hashTable, currentTable, i);
+                outfileType.write(printQ);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    void printSortedData(LLQueue[][] hashTable, int currentTable, FileWriter outfileType, int offSet){
+        int index = 0;
+        int lineNum = 0;
+        for (int i = 0; i < hashTable[currentTable].length; i++){
+            if(!hashTable[currentTable][i].isEmpty()){
+                LLQueue queue = hashTable[currentTable][i];
+                listNode tmp = queue.head.next;
+                while(tmp != null){
+                    int data = tmp.data - offSet;
+                    try {
+                        if(lineNum != 10){
+                            outfileType.write(data + " ");
+                            lineNum++;
+                        } else {
+                            outfileType.write("\n");
+                            outfileType.write(data + " ");
+                            lineNum = 0;
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                tmp = tmp.next;
+                }
+            }
+        }
+    }
 }
