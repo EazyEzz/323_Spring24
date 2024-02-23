@@ -277,7 +277,7 @@ class RadixSort{
                     }
                 }
             }
-            outfileType.write("\n");
+            outfileType.write("\n\n");
         } catch (IOException e) {
             e.printStackTrace();
         }       
