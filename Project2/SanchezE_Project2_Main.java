@@ -47,21 +47,21 @@ class listNode{
 }
 
 class LLQueue{
-    static listNode head;
-    static listNode tail;
+    listNode head;
+    listNode tail;
 
     LLQueue(){
         this.head = new listNode(-9999);
         this.tail = head;
     }
 
-    static void insertQ(LLQueue[][] hashTable, int currentTable, int index, listNode newNode){
+    void insertQ(LLQueue[][] hashTable, int currentTable, int index, listNode newNode){
         hashTable[currentTable][index].tail.next = newNode;
         hashTable[currentTable][index].tail = newNode;
 
     }
 
-    static listNode deleteQ(){
+    listNode deleteQ(){
         listNode t = head;
         if (t.next != null) {
             if (tail == t.next){
@@ -75,24 +75,23 @@ class LLQueue{
         return null;
     }
 
-    static Boolean isEmpty(){
+    Boolean isEmpty(){
         return tail == head;
     }
 
-    static String printQueue(LLQueue[][] hashTable, int currentTable, int index){
+    String printQueue(LLQueue[][] hashTable, int currentTable, int index){
         StringBuilder sb;
         if (!(hashTable[currentTable][index].isEmpty())){
             sb = new StringBuilder("Table[" + currentTable + "][" + index + "]: ");
-            listNode currNode = hashTable[currentTable][index].head;
+            listNode currNode = hashTable[currentTable][index].head; //skips dummy node
             while (currNode != null){
                 sb.append(listNode.printNode(currNode)).append(" -> ");
                 currNode = currNode.next;
             }
-            sb.append(" -> NULL");
+            sb.append("NULL\n");
             return sb.toString();
         }
-        sb = new StringBuilder("");
-        return sb.toString();
+        return null;
     }
 }
 
@@ -100,12 +99,9 @@ class RadixSort{
     private int tableSize = 10;
     LLQueue[][] hashTable; //A specific 2-D array designed to hold LLQueues().
     int data;
-    int currentTable;
-    int previousTable;
-    int maxLength;
-    int offSet;
-    int digitPosition;
-    int currentDigit;
+    int maxLength = 0;
+    int offSet = 0;
+    int currentDigit = 0;
 
     RadixSort(File inFile, FileWriter debugWriter){
         this.hashTable = new LLQueue[2][tableSize];//does not create dummy nodes
@@ -158,8 +154,9 @@ class RadixSort{
     }
 
     void RSort(File inFile, FileWriter outWriter, FileWriter debugWriter){
-        digitPosition = 0;
-        currentTable = 0;
+        int digitPosition = 1;
+        int currentTable = 0;
+        int previousTable;
         int hashIndex;
 
         try (Scanner scanner = new Scanner(new FileReader(inFile))) {
@@ -175,27 +172,27 @@ class RadixSort{
                         listNode newNode = new listNode(data);
                         hashIndex = getIndex(data,digitPosition); //hash function
 
-                        LLQueue.insertQ(hashTable, currentTable, hashIndex, newNode);
-                    }
-                    debugWriter.write("In RSort: After inserting all data from inFile into hashTable[" + currentTable + "]\n");
-                    printTable(hashTable, currentTable, debugWriter);
-                    
+                        hashTable[currentTable][hashIndex].insertQ(hashTable, currentTable, hashIndex, newNode);
+                    }                    
                 } //close inner lineScanner
             }
+            debugWriter.write("In RSort: After inserting all data from inFile into hashTable[" + currentTable + "]\n");
+            printTable(hashTable, currentTable, debugWriter);
         } catch (IOException e){ //close outter scanner
             e.printStackTrace();
         }
         //step 4-11 loop until digitPosition < maxLength
         //starting currentTable = 0
         //maxLength = 3
-        digitPosition++;
         //starting digitPosition = 1
-        while (digitPosition < maxLength){
-            previousTable = currentDigit;
-            currentTable = (currentTable +1) % 2;
+        int tableIndex = 0;
+        while (digitPosition <= maxLength){
+            int dP = digitPosition;
+            previousTable = currentTable;
+            currentTable = (currentTable + 1) % 2;
             
             try {
-                outWriter.write("\nIn RSort(), digitPosition = " + digitPosition + 
+                outWriter.write("In RSort(), digitPosition = " + dP + 
                                 ", currentTable = " + currentTable +
                                 ", previousTable = " + previousTable + "\n");
                 outWriter.write("In RSort(), printing previous hashTable\n");
@@ -205,27 +202,31 @@ class RadixSort{
                 e.printStackTrace();
             }
             //tableIndex = 0
-            for (int tableIndex = 0; tableIndex < 10; tableIndex++) {
-            // move nodes from hashTable[previousTable][tableIndex] queue to current table
-                while (!(hashTable[previousTable][tableIndex].isEmpty()) && tableIndex < 10) {
-                    listNode newNode = hashTable[previousTable][tableIndex].deleteQ();
-                    hashIndex = getIndex(newNode.data, digitPosition);
-                    LLQueue.insertQ(hashTable, currentTable, hashIndex, newNode);
-
-                    try {
-                        debugWriter.write(
-                                "In RSort(), finished moving one queue from previousTable to currentTable; tableIndex = "
-                                + tableIndex + "\n");
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+            for (int i = 0; i < 10; i++) {
+                if(tableIndex > 9){
+                    tableIndex = 0;
                 }
+            // move nodes from hashTable[previousTable][tableIndex] queue to current table
+                while (!(hashTable[previousTable][i].isEmpty()) && i < 10) {
+                    listNode newNode = hashTable[previousTable][i].deleteQ();
+                    hashIndex = getIndex(newNode.data, digitPosition);
+                    hashTable[currentTable][hashIndex].insertQ(hashTable, currentTable, hashIndex, newNode);
+                }
+                try {
+                    debugWriter.write(
+                            "In RSort(), finished moving one queue from previousTable "
+                            + previousTable + " to currentTable " + currentTable + "; tableIndex = "
+                            + tableIndex + "\n");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                tableIndex++;
             }
             digitPosition++;
         }
         
         try {
-            outWriter.write("\nPrinting the sorted data\n");
+            outWriter.write("Printing the sorted data\n");
             printSortedData(hashTable, currentTable, outWriter, offSet);
         } catch (IOException e) {
             e.printStackTrace();
@@ -244,10 +245,11 @@ class RadixSort{
     void printTable(LLQueue[][] hashTable, int currentTable, FileWriter outfileType){
         //call printQueue()
         try {
-            String printQ = "";
-            for (int i = 0; i < 10; i++){
-                printQ = LLQueue.printQueue(hashTable, currentTable, i);
-                outfileType.write(printQ);
+            for (int i = 0; i < hashTable[currentTable].length; i++){
+                String printQ = hashTable[currentTable][i].printQueue(hashTable, currentTable, i);
+                if (printQ != null){
+                    outfileType.write(printQ + "\n");
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -255,7 +257,6 @@ class RadixSort{
     }
 
     void printSortedData(LLQueue[][] hashTable, int currentTable, FileWriter outfileType, int offSet){
-        int index = 0;
         int lineNum = 0;
         for (int i = 0; i < hashTable[currentTable].length; i++){
             if(!hashTable[currentTable][i].isEmpty()){
@@ -270,7 +271,7 @@ class RadixSort{
                         } else {
                             outfileType.write("\n");
                             outfileType.write(data + " ");
-                            lineNum = 0;
+                            lineNum = 1;
                         }
                     } catch (IOException e) {
                         e.printStackTrace();

@@ -1,0 +1,58 @@
+** Entering preProcessing()
+In preProcessin():
+negativeNum = 0
+positiveNum = 991
+maxLength = 3
+Leaving preProcessing()
+*** Entering RSort()
+In RSort: After inserting all data from inFile into hashTable[0]
+Table[0][0]: (-9999,402) -> (402, null) -> NULL
+
+Table[0][1]: (-9999,818) -> (818,714) -> (714,313) -> (313, null) -> NULL
+
+Table[0][2]: (-9999,328) -> (328,126) -> (126, null) -> NULL
+
+Table[0][3]: (-9999,637) -> (637,538) -> (538, null) -> NULL
+
+Table[0][4]: (-9999,448) -> (448,249) -> (249, null) -> NULL
+
+Table[0][5]: (-9999,252) -> (252,653) -> (653,857) -> (857,852) -> (852,555) -> (555, null) -> NULL
+
+Table[0][6]: (-9999,969) -> (969,64) -> (64, null) -> NULL
+
+Table[0][7]: (-9999,171) -> (171,777) -> (777, null) -> NULL
+
+Table[0][8]: (-9999,88) -> (88, null) -> NULL
+
+Table[0][9]: (-9999,296) -> (296,991) -> (991, null) -> NULL
+
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 0
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 1
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 2
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 3
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 4
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 5
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 6
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 7
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 8
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 9
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 0
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 1
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 2
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 3
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 4
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 5
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 6
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 7
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 8
+In RSort(), finished moving one queue from previousTable 1 to currentTable 0; tableIndex = 9
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 0
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 1
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 2
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 3
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 4
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 5
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 6
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 7
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 8
+In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 9
