@@ -258,27 +258,28 @@ class RadixSort{
 
     void printSortedData(LLQueue[][] hashTable, int currentTable, FileWriter outfileType, int offSet){
         int lineNum = 0;
-        for (int i = 0; i < hashTable[currentTable].length; i++){
-            if(!hashTable[currentTable][i].isEmpty()){
-                LLQueue queue = hashTable[currentTable][i];
-                listNode tmp = queue.head.next;
-                while(tmp != null){
-                    int data = tmp.data - offSet;
-                    try {
-                        if(lineNum != 10){
-                            outfileType.write(data + " ");
-                            lineNum++;
-                        } else {
-                            outfileType.write("\n");
-                            outfileType.write(data + " ");
-                            lineNum = 1;
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
+        try {
+            for (int i = 0; i < hashTable[currentTable].length; i++){
+                if(!hashTable[currentTable][i].isEmpty()){
+                    LLQueue queue = hashTable[currentTable][i];
+                    listNode tmp = queue.head.next;
+                    while(tmp != null){
+                        int data = tmp.data - offSet;
+                            if(lineNum != 10){
+                                outfileType.write(data + " ");
+                                lineNum++;
+                            } else {
+                                outfileType.write("\n");
+                                outfileType.write(data + " ");
+                                lineNum = 1;
+                            }
+                    tmp = tmp.next;
                     }
-                tmp = tmp.next;
                 }
             }
-        }
+            outfileType.write("\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }       
     }
-}
+}    
