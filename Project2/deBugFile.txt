@@ -6,25 +6,23 @@ maxLength = 3
 Leaving preProcessing()
 *** Entering RSort()
 In RSort: After inserting all data from inFile into hashTable[0]
-Table[0][0]: (-9999,402) -> (402, null) -> NULL
+Table[0][1]: (-9999,171) -> (171,991) -> (991, null) -> NULL
 
-Table[0][1]: (-9999,818) -> (818,714) -> (714,313) -> (313, null) -> NULL
+Table[0][2]: (-9999,402) -> (402,252) -> (252,852) -> (852, null) -> NULL
 
-Table[0][2]: (-9999,328) -> (328,126) -> (126, null) -> NULL
+Table[0][3]: (-9999,653) -> (653,313) -> (313, null) -> NULL
 
-Table[0][3]: (-9999,637) -> (637,538) -> (538, null) -> NULL
+Table[0][4]: (-9999,714) -> (714,64) -> (64, null) -> NULL
 
-Table[0][4]: (-9999,448) -> (448,249) -> (249, null) -> NULL
+Table[0][5]: (-9999,555) -> (555, null) -> NULL
 
-Table[0][5]: (-9999,252) -> (252,653) -> (653,857) -> (857,852) -> (852,555) -> (555, null) -> NULL
+Table[0][6]: (-9999,296) -> (296,126) -> (126, null) -> NULL
 
-Table[0][6]: (-9999,969) -> (969,64) -> (64, null) -> NULL
+Table[0][7]: (-9999,637) -> (637,777) -> (777,857) -> (857, null) -> NULL
 
-Table[0][7]: (-9999,171) -> (171,777) -> (777, null) -> NULL
+Table[0][8]: (-9999,328) -> (328,818) -> (818,538) -> (538,88) -> (88,448) -> (448, null) -> NULL
 
-Table[0][8]: (-9999,88) -> (88, null) -> NULL
-
-Table[0][9]: (-9999,296) -> (296,991) -> (991, null) -> NULL
+Table[0][9]: (-9999,969) -> (969,249) -> (249, null) -> NULL
 
 In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 0
 In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 1
@@ -64,21 +62,25 @@ maxLength = 4
 Leaving preProcessing()
 *** Entering RSort()
 In RSort: After inserting all data from inFile into hashTable[0]
-Table[0][0]: (-9999,903) -> (903,1403) -> (1403,0) -> (0,1805) -> (1805,808) -> (808,904) -> (904, null) -> NULL
+Table[0][0]: (-9999,1130) -> (1130,1220) -> (1220,0) -> (0,940) -> (940,820) -> (820,890) -> (890, null) -> NULL
 
-Table[0][1]: (-9999,815) -> (815,711) -> (711,813) -> (813,1419) -> (1419,1019) -> (1019,812) -> (812,814) -> (814, null) -> NULL
+Table[0][1]: (-9999,831) -> (831,1561) -> (1561,711) -> (711,1491) -> (1491, null) -> NULL
 
-Table[0][2]: (-9999,1220) -> (1220,820) -> (820,829) -> (829, null) -> NULL
+Table[0][2]: (-9999,1482) -> (1482,1482) -> (1482,812) -> (812,1032) -> (1032, null) -> NULL
 
-Table[0][3]: (-9999,933) -> (933,831) -> (831,1130) -> (1130,1139) -> (1139,1032) -> (1032, null) -> NULL
+Table[0][3]: (-9999,933) -> (933,903) -> (903,813) -> (813,1403) -> (1403, null) -> NULL
 
-Table[0][4]: (-9999,1646) -> (1646,849) -> (849,1345) -> (1345,940) -> (940, null) -> NULL
+Table[0][4]: (-9999,1084) -> (1084,904) -> (904,814) -> (814, null) -> NULL
 
-Table[0][6]: (-9999,269) -> (269,1167) -> (1167,1561) -> (1561, null) -> NULL
+Table[0][5]: (-9999,1345) -> (1345,815) -> (815,1805) -> (1805, null) -> NULL
 
-Table[0][8]: (-9999,1482) -> (1482,1482) -> (1482,1084) -> (1084,1288) -> (1288,888) -> (888, null) -> NULL
+Table[0][6]: (-9999,1646) -> (1646,396) -> (396, null) -> NULL
 
-Table[0][9]: (-9999,897) -> (897,1491) -> (1491,396) -> (396,890) -> (890, null) -> NULL
+Table[0][7]: (-9999,897) -> (897,1167) -> (1167, null) -> NULL
+
+Table[0][8]: (-9999,808) -> (808,1288) -> (1288,888) -> (888, null) -> NULL
+
+Table[0][9]: (-9999,269) -> (269,849) -> (849,1139) -> (1139,1419) -> (1419,1019) -> (1019,829) -> (829, null) -> NULL
 
 In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 0
 In RSort(), finished moving one queue from previousTable 0 to currentTable 1; tableIndex = 1

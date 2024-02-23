@@ -154,10 +154,10 @@ class RadixSort{
     }
 
     void RSort(File inFile, FileWriter outWriter, FileWriter debugWriter){
-        int digitPosition = 1;
+        int digitPosition = 0;
         int currentTable = 0;
         int previousTable;
-        int hashIndex;
+        int hashIndex = 0;
 
         try (Scanner scanner = new Scanner(new FileReader(inFile))) {
             debugWriter.write("*** Entering RSort()\n");
@@ -186,7 +186,7 @@ class RadixSort{
         //maxLength = 3
         //starting digitPosition = 1
         int tableIndex = 0;
-        while (digitPosition <= maxLength){
+        while (digitPosition < maxLength){
             int dP = digitPosition;
             previousTable = currentTable;
             currentTable = (currentTable + 1) % 2;
