@@ -1,0 +1,47 @@
+Entering constructHuffmanLList() method
+---------------------------------------
+In constructHuffmanLList(), chr = a , prob = 40
+In constructHuffmanLList(), printing newNode: 
+(a, 40, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (a, 40, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = o , prob = 5
+In constructHuffmanLList(), printing newNode: 
+(o, 5, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (o, 5, , a, null, null) -> (a, 40, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = e , prob = 20
+In constructHuffmanLList(), printing newNode: 
+(e, 20, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (o, 5, , e, null, null) -> (e, 20, , a, null, null) -> (a, 40, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = h , prob = 5
+In constructHuffmanLList(), printing newNode: 
+(h, 5, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (h, 5, , o, null, null) -> (o, 5, , e, null, null) -> (e, 20, , a, null, null) -> (a, 40, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = i , prob = 10
+In constructHuffmanLList(), printing newNode: 
+(i, 10, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (h, 5, , o, null, null) -> (o, 5, , i, null, null) -> (i, 10, , e, null, null) -> (e, 20, , a, null, null) -> (a, 40, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = g , prob = 15
+In constructHuffmanLList(), printing newNode: 
+(g, 15, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (h, 5, , o, null, null) -> (o, 5, , i, null, null) -> (i, 10, , g, null, null) -> (g, 15, , e, null, null) -> (e, 20, , a, null, null) -> (a, 40, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = d , prob = 5
+In constructHuffmanLList(), printing newNode: 
+(d, 5, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (d, 5, , h, null, null) -> (h, 5, , o, null, null) -> (o, 5, , i, null, null) -> (i, 10, , g, null, null) -> (g, 15, , e, null, null) -> (e, 20, , a, null, null) -> (a, 40, , null, null, null) -> NULL
+
+---------------------------------
+Entering constructHuffmanBinTree:
+-----------------------------------
+In constructHuffmanBinTree, printing newNode: (dh, 10, , null, d, h)
+In constructHuffmanBinTree, printing newNode: (odh, 15, , null, o, dh)
+In constructHuffmanBinTree, printing newNode: (iodh, 25, , null, i, odh)
+In constructHuffmanBinTree, printing newNode: (ge, 35, , null, g, e)
+In constructHuffmanBinTree, printing newNode: (iodhge, 60, , null, iodh, ge)
+In constructHuffmanBinTree, printing newNode: (aiodhge, 100, , null, a, iodhge)

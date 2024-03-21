@@ -1,0 +1,58 @@
+In main() printing list: 
+listHead -> (d, 5, , h, null, null) -> (h, 5, , o, null, null) -> (o, 5, , i, null, null) -> (i, 10, , g, null, null) -> (g, 15, , e, null, null) -> (e, 20, , a, null, null) -> (a, 40, , null, null, null) -> NULL
+----------------
+char | code
+----------------
+a    | 0
+i    | 0100
+o    | 010010
+d    | 01001010
+h    | 010010101
+g    | 01010
+e    | 010101
+----------------
+PreOrder Traversal:
+(aiodhge, 100, , null, a, iodhge)
+(a, 40, 0, iodhge, null, null)
+(iodhge, 60, , aiodhge, iodh, ge)
+(iodh, 25, , ge, i, odh)
+(i, 10, 0100, odh, null, null)
+(odh, 15, , g, o, dh)
+(o, 5, 010010, dh, null, null)
+(dh, 10, , i, d, h)
+(d, 5, 01001010, h, null, null)
+(h, 5, 010010101, o, null, null)
+(ge, 35, , a, g, e)
+(g, 15, 01010, e, null, null)
+(e, 20, 010101, iodh, null, null)
+-------------------------------------
+InOrder Traversal:
+(a, 40, 0, iodhge, null, null)
+(aiodhge, 100, , null, a, iodhge)
+(i, 10, 0100, odh, null, null)
+(iodh, 25, , ge, i, odh)
+(o, 5, 010010, dh, null, null)
+(odh, 15, , g, o, dh)
+(d, 5, 01001010, h, null, null)
+(dh, 10, , i, d, h)
+(h, 5, 010010101, o, null, null)
+(iodhge, 60, , aiodhge, iodh, ge)
+(g, 15, 01010, e, null, null)
+(ge, 35, , a, g, e)
+(e, 20, 010101, iodh, null, null)
+-------------------------------------
+PostOrder Traversal:
+(a, 40, 0, iodhge, null, null)
+(i, 10, 0100, odh, null, null)
+(o, 5, 010010, dh, null, null)
+(d, 5, 01001010, h, null, null)
+(h, 5, 010010101, o, null, null)
+(dh, 10, , i, d, h)
+(odh, 15, , g, o, dh)
+(iodh, 25, , ge, i, odh)
+(g, 15, 01010, e, null, null)
+(e, 20, 010101, iodh, null, null)
+(ge, 35, , a, g, e)
+(iodhge, 60, , aiodhge, iodh, ge)
+(aiodhge, 100, , null, a, iodhge)
+-------------------------------------

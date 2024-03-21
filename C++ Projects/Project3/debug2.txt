@@ -1,0 +1,77 @@
+Entering constructHuffmanLList() method
+---------------------------------------
+In constructHuffmanLList(), chr = m , prob = 38
+In constructHuffmanLList(), printing newNode: 
+(m, 38, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = l , prob = 3
+In constructHuffmanLList(), printing newNode: 
+(l, 3, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (l, 3, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = k , prob = 22
+In constructHuffmanLList(), printing newNode: 
+(k, 22, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (l, 3, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = j , prob = 4
+In constructHuffmanLList(), printing newNode: 
+(j, 4, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (l, 3, , j, null, null) -> (j, 4, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = i , prob = 6
+In constructHuffmanLList(), printing newNode: 
+(i, 6, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (l, 3, , j, null, null) -> (j, 4, , i, null, null) -> (i, 6, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = h , prob = 1
+In constructHuffmanLList(), printing newNode: 
+(h, 1, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (h, 1, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , i, null, null) -> (i, 6, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = g , prob = 5
+In constructHuffmanLList(), printing newNode: 
+(g, 5, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (h, 1, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , g, null, null) -> (g, 5, , i, null, null) -> (i, 6, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = f , prob = 2
+In constructHuffmanLList(), printing newNode: 
+(f, 2, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (h, 1, , f, null, null) -> (f, 2, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , g, null, null) -> (g, 5, , i, null, null) -> (i, 6, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = e , prob = 5
+In constructHuffmanLList(), printing newNode: 
+(e, 5, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (h, 1, , f, null, null) -> (f, 2, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , e, null, null) -> (e, 5, , g, null, null) -> (g, 5, , i, null, null) -> (i, 6, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = d , prob = 1
+In constructHuffmanLList(), printing newNode: 
+(d, 1, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (d, 1, , h, null, null) -> (h, 1, , f, null, null) -> (f, 2, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , e, null, null) -> (e, 5, , g, null, null) -> (g, 5, , i, null, null) -> (i, 6, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = c , prob = 3
+In constructHuffmanLList(), printing newNode: 
+(c, 3, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (d, 1, , h, null, null) -> (h, 1, , f, null, null) -> (f, 2, , c, null, null) -> (c, 3, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , e, null, null) -> (e, 5, , g, null, null) -> (g, 5, , i, null, null) -> (i, 6, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+In constructHuffmanLList(), chr = b , prob = 10
+In constructHuffmanLList(), printing newNode: 
+(b, 10, , null, null, null)
+In constructHuffmanLList() printing list: 
+listHead -> (d, 1, , h, null, null) -> (h, 1, , f, null, null) -> (f, 2, , c, null, null) -> (c, 3, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , e, null, null) -> (e, 5, , g, null, null) -> (g, 5, , i, null, null) -> (i, 6, , b, null, null) -> (b, 10, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+
+---------------------------------
+Entering constructHuffmanBinTree:
+-----------------------------------
+In constructHuffmanBinTree, printing newNode: (dh, 2, , null, d, h)
+In constructHuffmanBinTree, printing newNode: (dhf, 4, , null, dh, f)
+In constructHuffmanBinTree, printing newNode: (cl, 6, , null, c, l)
+In constructHuffmanBinTree, printing newNode: (dhfj, 8, , null, dhf, j)
+In constructHuffmanBinTree, printing newNode: (eg, 10, , null, e, g)
+In constructHuffmanBinTree, printing newNode: (cli, 12, , null, cl, i)
+In constructHuffmanBinTree, printing newNode: (dhfjeg, 18, , null, dhfj, eg)
+In constructHuffmanBinTree, printing newNode: (bcli, 22, , null, b, cli)
+In constructHuffmanBinTree, printing newNode: (dhfjegbcli, 40, , null, dhfjeg, bcli)
+In constructHuffmanBinTree, printing newNode: (km, 60, , null, k, m)
+In constructHuffmanBinTree, printing newNode: (dhfjegbclikm, 100, , null, dhfjegbcli, km)

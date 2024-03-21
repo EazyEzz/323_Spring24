@@ -1,0 +1,93 @@
+In main() printing list: 
+listHead -> (d, 1, , h, null, null) -> (h, 1, , f, null, null) -> (f, 2, , c, null, null) -> (c, 3, , l, null, null) -> (l, 3, , j, null, null) -> (j, 4, , e, null, null) -> (e, 5, , g, null, null) -> (g, 5, , i, null, null) -> (i, 6, , b, null, null) -> (b, 10, , k, null, null) -> (k, 22, , m, null, null) -> (m, 38, , null, null, null) -> NULL
+----------------
+char | code
+----------------
+d    | 000000
+h    | 0000001
+f    | 000001
+j    | 00001
+e    | 00010
+g    | 000101
+b    | 0010
+c    | 0010100
+l    | 00101001
+i    | 0010101
+k    | 010
+m    | 0101
+----------------
+PreOrder Traversal:
+(dhfjegbclikm, 100, , null, dhfjegbcli, km)
+(dhfjegbcli, 40, , km, dhfjeg, bcli)
+(dhfjeg, 18, , bcli, dhfj, eg)
+(dhfj, 8, , eg, dhf, j)
+(dhf, 4, , j, dh, f)
+(dh, 2, , f, d, h)
+(d, 1, 000000, h, null, null)
+(h, 1, 0000001, dh, null, null)
+(f, 2, 000001, c, null, null)
+(j, 4, 00001, e, null, null)
+(eg, 10, , b, e, g)
+(e, 5, 00010, g, null, null)
+(g, 5, 000101, cl, null, null)
+(bcli, 22, , k, b, cli)
+(b, 10, 0010, cli, null, null)
+(cli, 12, , dhfjeg, cl, i)
+(cl, 6, , i, c, l)
+(c, 3, 0010100, l, null, null)
+(l, 3, 00101001, dhf, null, null)
+(i, 6, 0010101, dhfj, null, null)
+(km, 60, , dhfjegbclikm, k, m)
+(k, 22, 010, m, null, null)
+(m, 38, 0101, dhfjegbcli, null, null)
+-------------------------------------
+InOrder Traversal:
+(d, 1, 000000, h, null, null)
+(dh, 2, , f, d, h)
+(h, 1, 0000001, dh, null, null)
+(dhf, 4, , j, dh, f)
+(f, 2, 000001, c, null, null)
+(dhfj, 8, , eg, dhf, j)
+(j, 4, 00001, e, null, null)
+(dhfjeg, 18, , bcli, dhfj, eg)
+(e, 5, 00010, g, null, null)
+(eg, 10, , b, e, g)
+(g, 5, 000101, cl, null, null)
+(dhfjegbcli, 40, , km, dhfjeg, bcli)
+(b, 10, 0010, cli, null, null)
+(bcli, 22, , k, b, cli)
+(c, 3, 0010100, l, null, null)
+(cl, 6, , i, c, l)
+(l, 3, 00101001, dhf, null, null)
+(cli, 12, , dhfjeg, cl, i)
+(i, 6, 0010101, dhfj, null, null)
+(dhfjegbclikm, 100, , null, dhfjegbcli, km)
+(k, 22, 010, m, null, null)
+(km, 60, , dhfjegbclikm, k, m)
+(m, 38, 0101, dhfjegbcli, null, null)
+-------------------------------------
+PostOrder Traversal:
+(d, 1, 000000, h, null, null)
+(h, 1, 0000001, dh, null, null)
+(dh, 2, , f, d, h)
+(f, 2, 000001, c, null, null)
+(dhf, 4, , j, dh, f)
+(j, 4, 00001, e, null, null)
+(dhfj, 8, , eg, dhf, j)
+(e, 5, 00010, g, null, null)
+(g, 5, 000101, cl, null, null)
+(eg, 10, , b, e, g)
+(dhfjeg, 18, , bcli, dhfj, eg)
+(b, 10, 0010, cli, null, null)
+(c, 3, 0010100, l, null, null)
+(l, 3, 00101001, dhf, null, null)
+(cl, 6, , i, c, l)
+(i, 6, 0010101, dhfj, null, null)
+(cli, 12, , dhfjeg, cl, i)
+(bcli, 22, , k, b, cli)
+(dhfjegbcli, 40, , km, dhfjeg, bcli)
+(k, 22, 010, m, null, null)
+(m, 38, 0101, dhfjegbcli, null, null)
+(km, 60, , dhfjegbclikm, k, m)
+(dhfjegbclikm, 100, , null, dhfjegbcli, km)
+-------------------------------------
