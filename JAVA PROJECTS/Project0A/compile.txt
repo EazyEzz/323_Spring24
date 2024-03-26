@@ -1,0 +1,2 @@
+javac SanchezE_Project#_Main.java
+java SanchezE_Project#_Main data1.txt output.txt debug.txt

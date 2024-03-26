@@ -1,0 +1,2224 @@
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       1
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       10
+      3       5
+      4       20
+      5       30
+      6       9999
+      7       9999
+      8       20
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 3
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       3
+      3       1
+      4       3
+      5       1
+      6       1
+      7       3
+      8       3
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       0
+      4       1
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       7
+      3       5
+      4       10
+      5       30
+      6       9999
+      7       35
+      8       15
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 2
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       3
+      3       1
+      4       3
+      5       1
+      6       1
+      7       3
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       1
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       7
+      3       5
+      4       10
+      5       30
+      6       9999
+      7       35
+      8       9
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 8
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       3
+      3       1
+      4       3
+      5       1
+      6       8
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       1
+      5       1
+      6       1
+      7       1
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       7
+      3       5
+      4       10
+      5       30
+      6       16
+      7       11
+      8       9
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 4
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       3
+      3       1
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       1
+      6       1
+      7       1
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       7
+      3       5
+      4       10
+      5       15
+      6       13
+      7       11
+      8       9
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 7
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       3
+      3       1
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       1
+      6       1
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       7
+      3       5
+      4       10
+      5       15
+      6       13
+      7       11
+      8       9
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 6
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       3
+      3       1
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       7
+      3       5
+      4       10
+      5       15
+      6       13
+      7       11
+      8       9
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 5
+***Below Is The 'Father' Array***
+    node    father
+      1       1
+      2       3
+      3       1
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       0
+      2       7
+      3       5
+      4       10
+      5       15
+      6       13
+      7       11
+      8       9
+
+***Below Is The 'Father' Array***
+    node    father
+      1       3
+      2       3
+      3       3
+      4       3
+      5       3
+      6       3
+      7       3
+      8       3
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       0
+      4       1
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9999
+      2       2
+      3       0
+      4       5
+      5       9999
+      6       9999
+      7       30
+      8       10
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 2
+***Below Is The 'Father' Array***
+    node    father
+      1       2
+      2       3
+      3       3
+      4       3
+      5       3
+      6       3
+      7       3
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       0
+      4       1
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       27
+      2       2
+      3       0
+      4       5
+      5       9999
+      6       9999
+      7       30
+      8       4
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 8
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       3
+      3       3
+      4       3
+      5       3
+      6       8
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       0
+      4       1
+      5       1
+      6       1
+      7       1
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       10
+      2       2
+      3       0
+      4       5
+      5       9999
+      6       11
+      7       6
+      8       4
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 4
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       3
+      3       3
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       0
+      4       0
+      5       1
+      6       1
+      7       1
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       10
+      2       2
+      3       0
+      4       5
+      5       10
+      6       8
+      7       6
+      8       4
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 7
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       3
+      3       3
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       0
+      4       0
+      5       1
+      6       1
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       10
+      2       2
+      3       0
+      4       5
+      5       10
+      6       8
+      7       6
+      8       4
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 6
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       3
+      3       3
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       0
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       10
+      2       2
+      3       0
+      4       5
+      5       10
+      6       8
+      7       6
+      8       4
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 1
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       3
+      3       3
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       10
+      2       2
+      3       0
+      4       5
+      5       10
+      6       8
+      7       6
+      8       4
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 5
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       3
+      3       3
+      4       3
+      5       4
+      6       4
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       10
+      2       2
+      3       0
+      4       5
+      5       10
+      6       8
+      7       6
+      8       4
+
+***Below Is The 'Father' Array***
+    node    father
+      1       5
+      2       5
+      3       5
+      4       5
+      5       5
+      6       5
+      7       5
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       0
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9999
+      2       10
+      3       9999
+      4       9999
+      5       0
+      6       15
+      7       9999
+      8       3
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 8
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       5
+      3       5
+      4       5
+      5       5
+      6       8
+      7       8
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       0
+      6       1
+      7       1
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9
+      2       10
+      3       9999
+      4       9999
+      5       0
+      6       10
+      7       5
+      8       3
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 7
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       5
+      3       5
+      4       7
+      5       5
+      6       7
+      7       8
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       0
+      6       1
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9
+      2       10
+      3       9999
+      4       9
+      5       0
+      6       8
+      7       5
+      8       3
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 6
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       5
+      3       6
+      4       7
+      5       5
+      6       7
+      7       8
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9
+      2       10
+      3       28
+      4       9
+      5       0
+      6       8
+      7       5
+      8       3
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 1
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       5
+      3       1
+      4       7
+      5       5
+      6       7
+      7       8
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       1
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9
+      2       10
+      3       14
+      4       9
+      5       0
+      6       8
+      7       5
+      8       3
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 4
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       5
+      3       1
+      4       7
+      5       5
+      6       7
+      7       8
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9
+      2       10
+      3       14
+      4       9
+      5       0
+      6       8
+      7       5
+      8       3
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 2
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       5
+      3       1
+      4       7
+      5       5
+      6       7
+      7       8
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9
+      2       10
+      3       14
+      4       9
+      5       0
+      6       8
+      7       5
+      8       3
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 3
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       5
+      3       1
+      4       7
+      5       5
+      6       7
+      7       8
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9
+      2       10
+      3       14
+      4       9
+      5       0
+      6       8
+      7       5
+      8       3
+
+***Below Is The 'Father' Array***
+    node    father
+      1       7
+      2       7
+      3       7
+      4       7
+      5       7
+      6       7
+      7       7
+      8       7
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       1
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       40
+      2       9999
+      3       9999
+      4       4
+      5       30
+      6       3
+      7       0
+      8       9999
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 6
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       6
+      4       7
+      5       7
+      6       7
+      7       7
+      8       7
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       23
+      4       4
+      5       30
+      6       3
+      7       0
+      8       9999
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 4
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       6
+      4       7
+      5       4
+      6       7
+      7       7
+      8       4
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       23
+      4       4
+      5       9
+      6       3
+      7       0
+      8       24
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 1
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       7
+      8       4
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       4
+      5       9
+      6       3
+      7       0
+      8       24
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 2
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       7
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       4
+      5       9
+      6       3
+      7       0
+      8       10
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 5
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       7
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       4
+      5       9
+      6       3
+      7       0
+      8       10
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 8
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       7
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       4
+      5       9
+      6       3
+      7       0
+      8       10
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 3
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       7
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       4
+      5       9
+      6       3
+      7       0
+      8       10
+
+***Below Is The 'Father' Array***
+    node    father
+      1       2
+      2       2
+      3       2
+      4       2
+      5       2
+      6       2
+      7       2
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       1
+      4       1
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       25
+      2       0
+      3       35
+      4       9999
+      5       9999
+      6       9999
+      7       40
+      8       2
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 8
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       2
+      3       2
+      4       2
+      5       2
+      6       8
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       1
+      4       1
+      5       1
+      6       1
+      7       1
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       0
+      3       35
+      4       9999
+      5       9999
+      6       9
+      7       4
+      8       2
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 7
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       2
+      3       2
+      4       7
+      5       7
+      6       7
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       1
+      4       1
+      5       1
+      6       1
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       0
+      3       35
+      4       8
+      5       34
+      6       7
+      7       4
+      8       2
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 6
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       2
+      3       6
+      4       7
+      5       7
+      6       7
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       0
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       0
+      3       27
+      4       8
+      5       34
+      6       7
+      7       4
+      8       2
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 1
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       2
+      3       1
+      4       7
+      5       7
+      6       7
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       0
+      3       13
+      4       8
+      5       34
+      6       7
+      7       4
+      8       2
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 4
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       2
+      3       1
+      4       7
+      5       4
+      6       7
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       0
+      3       13
+      4       8
+      5       13
+      6       7
+      7       4
+      8       2
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 3
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       2
+      3       1
+      4       7
+      5       4
+      6       7
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       0
+      3       13
+      4       8
+      5       13
+      6       7
+      7       4
+      8       2
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 5
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       2
+      3       1
+      4       7
+      5       4
+      6       7
+      7       8
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       0
+      3       13
+      4       8
+      5       13
+      6       7
+      7       4
+      8       2
+
+***Below Is The 'Father' Array***
+    node    father
+      1       4
+      2       4
+      3       4
+      4       4
+      5       4
+      6       4
+      7       4
+      8       4
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       0
+      5       1
+      6       1
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       9999
+      2       9999
+      3       9999
+      4       0
+      5       5
+      6       3
+      7       25
+      8       20
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 6
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       6
+      4       4
+      5       4
+      6       4
+      7       6
+      8       4
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       0
+      5       1
+      6       0
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       23
+      4       0
+      5       5
+      6       3
+      7       5
+      8       20
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 5
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       6
+      4       4
+      5       4
+      6       4
+      7       6
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       0
+      5       0
+      6       0
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       23
+      4       0
+      5       5
+      6       3
+      7       5
+      8       8
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 7
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       6
+      4       4
+      5       4
+      6       4
+      7       6
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       23
+      4       0
+      5       5
+      6       3
+      7       5
+      8       8
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 1
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       4
+      5       4
+      6       4
+      7       6
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       0
+      5       5
+      6       3
+      7       5
+      8       8
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 2
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       4
+      5       4
+      6       4
+      7       6
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       0
+      5       5
+      6       3
+      7       5
+      8       8
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 8
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       4
+      5       4
+      6       4
+      7       6
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       0
+      5       5
+      6       3
+      7       5
+      8       8
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 3
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       4
+      5       4
+      6       4
+      7       6
+      8       5
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       8
+      2       8
+      3       13
+      4       0
+      5       5
+      6       3
+      7       5
+      8       8
+
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       6
+      4       6
+      5       6
+      6       6
+      7       6
+      8       6
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       0
+      7       1
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       20
+      4       9999
+      5       9999
+      6       0
+      7       2
+      8       9999
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 7
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       6
+      4       7
+      5       7
+      6       6
+      7       6
+      8       6
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       20
+      4       6
+      5       32
+      6       0
+      7       2
+      8       9999
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 1
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       7
+      6       6
+      7       6
+      8       1
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       10
+      4       6
+      5       32
+      6       0
+      7       2
+      8       25
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 2
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       7
+      6       6
+      7       6
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       10
+      4       6
+      5       32
+      6       0
+      7       2
+      8       7
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 4
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       6
+      7       6
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       1
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       10
+      4       6
+      5       11
+      6       0
+      7       2
+      8       7
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 8
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       6
+      7       6
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       10
+      4       6
+      5       11
+      6       0
+      7       2
+      8       7
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 3
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       6
+      7       6
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       10
+      4       6
+      5       11
+      6       0
+      7       2
+      8       7
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 5
+***Below Is The 'Father' Array***
+    node    father
+      1       6
+      2       6
+      3       1
+      4       7
+      5       4
+      6       6
+      7       6
+      8       2
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       5
+      2       5
+      3       10
+      4       6
+      5       11
+      6       0
+      7       2
+      8       7
+
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       8
+      3       8
+      4       8
+      5       8
+      6       8
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       1
+      7       1
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       9999
+      3       9999
+      4       9999
+      5       9999
+      6       7
+      7       2
+      8       0
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 7
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       8
+      3       8
+      4       7
+      5       7
+      6       7
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       1
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       9999
+      3       9999
+      4       6
+      5       32
+      6       5
+      7       2
+      8       0
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 6
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       6
+      3       6
+      4       7
+      5       7
+      6       7
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       1
+      2       1
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       10
+      3       25
+      4       6
+      5       32
+      6       5
+      7       2
+      8       0
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 1
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       6
+      3       1
+      4       7
+      5       7
+      6       7
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       1
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       10
+      3       11
+      4       6
+      5       32
+      6       5
+      7       2
+      8       0
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 4
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       1
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       10
+      3       11
+      4       6
+      5       11
+      6       5
+      7       2
+      8       0
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 2
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       1
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       10
+      3       11
+      4       6
+      5       11
+      6       5
+      7       2
+      8       0
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 3
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       1
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       10
+      3       11
+      4       6
+      5       11
+      6       5
+      7       2
+      8       0
+
+Entering findMinNode()
+In findMinNode(), minNode found is: 5
+***Below Is The 'Father' Array***
+    node    father
+      1       8
+      2       6
+      3       1
+      4       7
+      5       4
+      6       7
+      7       8
+      8       8
+
+***Below Is The 'ToDo' Array***
+    node     todo
+      1       0
+      2       0
+      3       0
+      4       0
+      5       0
+      6       0
+      7       0
+      8       0
+
+***Below Is The 'Best' Ary***
+    node    best cost
+      1       6
+      2       10
+      3       11
+      4       6
+      5       11
+      6       5
+      7       2
+      8       0
+
